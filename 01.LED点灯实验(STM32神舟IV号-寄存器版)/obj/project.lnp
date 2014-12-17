@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "..\obj\stm32f10x.o" "..\obj\main.o" 
+--strict --scatter "..\obj\project.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\project.map" -o ..\obj\project.axf
