@@ -3,7 +3,7 @@
 typedef unsigned           int uint32_t;
 typedef __IO uint32_t  vu32; 
 typedef unsigned short     int uint16_t;
-//
+
 #define GPIO_Pin_0                 ((uint16_t)0x0001)  /*!< Pin 0 selected */
 #define GPIO_Pin_1                 ((uint16_t)0x0002)  /*!< Pin 1 selected */
 #define GPIO_Pin_2                 ((uint16_t)0x0004)  /*!< Pin 2 selected */
@@ -71,7 +71,7 @@ int main(void)	 //main?????
 {
   	/* ??APB2?????,?GPIO???D???? */
   	RCC->APB2ENR |= RCC_APB2Periph_GPIOD;	
-     //
+
 	/*-- GPIO Mode Configuration??,????? -----------------------*/
 	/*-- GPIO CRL Configuration ??IO???8????(??????)---*/
 	/*-- GPIO CRH Configuration ??IO???8????(??????)---*/
@@ -89,5 +89,5 @@ int main(void)	 //main?????
 
 void Delay(vu32 nCount)		 //通过不断for循环nCount次，达到延时的目的口
 {
-  for(; nCount != 0; nCount--);//延时函数结束，思想和单片机编程差不多。Learned
+  for(; nCount != 0; nCount--);
 }
