@@ -3,7 +3,7 @@
 typedef unsigned           int uint32_t;
 typedef __IO uint32_t  vu32; 
 typedef unsigned short     int uint16_t;
-
+//i love GitHub.
 #define GPIO_Pin_0                 ((uint16_t)0x0001)  /*!< Pin 0 selected */
 #define GPIO_Pin_1                 ((uint16_t)0x0002)  /*!< Pin 1 selected */
 #define GPIO_Pin_2                 ((uint16_t)0x0004)  /*!< Pin 2 selected */
